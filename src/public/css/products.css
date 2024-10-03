@@ -35,14 +35,14 @@
     width: 128px;
     height: 48px;
     font-family: Hiragino Kaku Gothic Pro;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 600;
     line-height: 48px;
     color: rgba(51, 51, 51, 1);
     margin-bottom: 40px;
 }
 
-.form__button {
+.form__button-1 {
     margin: 0 ;
 }
 
@@ -54,35 +54,62 @@
     height: 40px;
     border: none;
     border-radius: 5px;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
     cursor: pointer;
 }
 
-.form__input--text{
-    width: 内包 (240px)px;
-    height: 内包 (70px)px;
-    padding: 0px 0px 20px 0px;
-    gap: 10px;
+.form {
+    margin: 0 auto;
+    width: 70%;
+    text-align: center;
+}
+
+.form__group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+/* .form__group-content{
+
+} */
+
+.form__input--text input{
+    width: 240px;
+    height:44px;
+    padding:20px;
     border: 0px 0px 1px 0px;
-    opacity: 0px;
+    border-color: gainsboro;
+    border-radius: 30px;
+    margin-bottom: 20px;
 }
 
 .form__button-search{
-    width: 固定 (240px)px;
-    height: 内包 (44px)px;
-    padding: 10px 0px 0px 0px;
-    gap: 10px;
-    border-radius: 5px 0px 0px 0px;
-    opacity: 0px;
-    color: rgba(245, 200, 0, 1);
+    width: 240px;
+    height: 44px;
+    padding: auto;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(245, 200, 0, 1);
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
 }
 
 .form__group-price{
     width: 120px;
     height: 30px;
-    gap: 0px;
-    opacity: 0px;
     color: rgba(51, 51, 51, 1);
+    margin-bottom: 20px;
+}
+
+.form__group-price select{
+    width: 240px;
+        height: 44px;
+        padding: 20px;
+        border: 0px 0px 1px 0px;
+        border-color: gainsboro;
+        border-radius: 5px;
+        margin-bottom: 20px;
 }
 
 .products-img{

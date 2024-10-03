@@ -22,11 +22,11 @@
             <div class="products-form__heading">
                 <h2>商品一覧</h2>
             </div>
-            <div class="form__button">
+            <div class="form__button-1">
                 <button class="form__button-add" type="submit">+商品を追加</button>
             </div>
         </div>
-        <div class="form">
+        <form class="form">
             <div class="form__group">
                 <div class="form__group-content">
                     <div class="form__input--text">
@@ -43,7 +43,7 @@
                     </select>
                 </div>
             </div>
-        </div>
+        </form>
         <div class="products-img">
             <div class="products-img__flex">
                 <div class="box">
@@ -51,7 +51,7 @@
                 </div>
             </div>
 
-        </div>
+</div>
 
 
 
