@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'jsMath-cmti10';
+    src: url('../fonts/webfonts_jsMath-cmti10.woff2') format('woff2'),
+        url('../fonts/webfonts_jsMath-cmti10.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+.header__inner {
+    margin: 0 auto;
+    padding: 20px 15px;
+    max-width: 1230px;
+}
+
+.header__logo {
+    font-family: 'jsMath-cmti10', sans-serif;
+    font-size: 30px;
+    font-style: italic;
+    color: rgba(245, 200, 0, 1);
+    text-align: left;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.products__content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 20px 20px;
+    max-width: 1230px;
+}
+
+.products-form__heading{
+    width: 128px;
+    height: 48px;
+    font-family: Hiragino Kaku Gothic Pro;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 48px;
+    color: rgba(51, 51, 51, 1);
+    margin-bottom: 40px;
+}
+
+.form__button {
+    margin: 0 ;
+}
+
+.form__button-add{
+    padding: 13px 20px 13px 20px;
+    background: rgba(255, 169, 41, 1);
+    padding: 10px;
+    width: 128px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form__input--text{
+    width: 内包 (240px)px;
+    height: 内包 (70px)px;
+    padding: 0px 0px 20px 0px;
+    gap: 10px;
+    border: 0px 0px 1px 0px;
+    opacity: 0px;
+}
+
+.form__button-search{
+    width: 固定 (240px)px;
+    height: 内包 (44px)px;
+    padding: 10px 0px 0px 0px;
+    gap: 10px;
+    border-radius: 5px 0px 0px 0px;
+    opacity: 0px;
+    color: rgba(245, 200, 0, 1);
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.form__group-price{
+    width: 120px;
+    height: 30px;
+    gap: 0px;
+    opacity: 0px;
+    color: rgba(51, 51, 51, 1);
+}
+
+.products-img{
+    width: 内包 (1, 162px)px;
+    height: 内包 (720px)px;
+    gap: 20px;
+    opacity: 0px;
+}
+
+.products-img__flex{
+    display: flex;
+    flex-wrap: wrap;
+}
