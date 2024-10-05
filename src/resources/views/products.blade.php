@@ -30,29 +30,39 @@
             <form class="form">
                 <div class="form__group">
                     <div class="form__group-content">
-                        <div class="form__input--text">
-                        <input type="text" name="name" placeholder="商品名で検索" />
+                        <div class="form__input">
+                            <div class="form__input--text">
+                            <input type="text" name="name" placeholder="商品名で検索" />
+                            </div>
                         </div>
                         <div class="form__button-2">
                         <button class="form__button-search" type="submit">検索</button>
                         </div>
                     <div class="form__group-price">
-                    <h3>価格順で表示</h3>
-                    <select name="price" placeholder="価格で並び替え">  <!--価格で並べ替えの表示ができていない-->
-                    <option>高い順に表示</option>
-                    <option>低い順に表示</option>
-                    </select>
+                        <div class="group-price--text">
+                            <h3>価格順で表示</h3>
+                        </div>
+                        <div class="group-price--select">
+                            <select name="price" placeholder="価格で並び替え">  <!--価格で並べ替えの表示ができていない-->
+                            <option>高い順に表示</option>                       <!--プルダウン図形は未編集-->
+                            <option>低い順に表示</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
             </form>
             <div class="products-img">
                 <div class="products-img__container">
-                    <div><img src="{{ asset('storage/fruits-img/kiwi.png') }}" alt="kiwi"></div>
-                    <div><img src="{{ asset('storage/fruits-img/strawberry.png') }}" alt="strawberry"></div>
-                    <div><img src="{{ asset('storage/fruits-img/orange.png') }}" alt="orange"></div>
-                    <div><img src="{{ asset('storage/fruits-img/watermelon.png') }}" alt="watermelon"></div>
-                    <div><img src="{{ asset('storage/fruits-img/peach.png') }}" alt="peach"></div>
-                    <div><img src="{{ asset('storage/fruits-img/muscat.png') }}" alt="muscat"></div>
+                    <div class="img__container--top">
+                        <div><img src="{{ asset('storage/fruits-img/kiwi.png') }}" alt="kiwi"></div>
+                        <div><img src="{{ asset('storage/fruits-img/strawberry.png') }}" alt="strawberry"></div>
+                        <div><img src="{{ asset('storage/fruits-img/orange.png') }}" alt="orange"></div>
+                    </div>
+                    <div class="img__container--bottom">
+                        <div><img src="{{ asset('storage/fruits-img/watermelon.png') }}" alt="watermelon"></div>
+                        <div><img src="{{ asset('storage/fruits-img/peach.png') }}" alt="peach"></div>
+                        <div><img src="{{ asset('storage/fruits-img/muscat.png') }}" alt="muscat"></div>
+                    </div>
                 </div>
             </div>
         </div>
