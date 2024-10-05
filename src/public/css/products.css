@@ -148,8 +148,10 @@
 }
 
 .form__button-2 {
-    width: 固定 (240px)px;
-    height: 内包 (44px)px;
+    min-width: 240px;
+    width: 100%;
+    min-height: 44px;
+    height: auto;
     padding: 10px 0px 0px 0px;
     gap: 10px;
     border-radius: 5px 0px 0px 0px;
@@ -172,8 +174,10 @@
 }
 
 .form__group-price{
-    width: 固定 (240px)px;
-    height: 内包 (113px)px;
+    min-width: 240px;
+    width: 100%;
+    min-height: 113px;
+    height: auto;
     padding: 0px 0px 20px 0px;
     gap: 20px;
     border: 0px 0px 1px 0px;
@@ -192,8 +196,10 @@
 }
 
 .group-price--select{
-    width: 固定 (240px)px;
-    height: 内包 (43px)px;
+    min-width: 240px;
+    width: 100%;
+    min-height: 43px;
+    height: auto;
     padding: 11px 10px 11px 10px;
     border-radius: 5px 0px 0px 0px;
     border: 1px 0px 0px 0px;
@@ -221,8 +227,10 @@
 }
 
 .products-img__container{
-    width: 内包 (1, 162px)px;
-    height: 内包 (720px)px;
+    min-width: 1px;
+    max-width: 162px;
+    min-height: 720px;
+    height: auto;
     gap: 20px;
 }
 
@@ -230,18 +238,22 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
-    width: 内包 (1, 162px)px;
-    height: 内包 (350px)px;
+    min-width: 1px;
+    max-width: 162px;
+    min-height: 350px;
+    height: auto;
     gap: 20px;
     opacity: 0px;
+    margin-bottom: 20px;
 }
 
 .img__container--bottom{
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
-    width: 内包 (1, 162px)px;
-    height: 内包 (350px)px;
+    min-width: 1px;
+    max-width: 162px;
+    min-height: 350px;
+    height: auto;
     gap: 20px;
-    opacity: 0px;
 }

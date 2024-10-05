@@ -54,7 +54,17 @@
             <div class="products-img">
                 <div class="products-img__container">
                     <div class="img__container--top">
-                        <div><img src="{{ asset('storage/fruits-img/kiwi.png') }}" alt="kiwi"></div>
+                        <div class="products__card">
+                            <div class="card__img"><img src="{{ asset('storage/fruits-img/kiwi.png') }}" alt="kiwi"></div>
+                        </div>
+                        <div class="card__content">
+                            <div class="card__name">キウイ</div>
+                            <div class="card__price">¥800</div>
+                        </div>
+
+
+
+
                         <div><img src="{{ asset('storage/fruits-img/strawberry.png') }}" alt="strawberry"></div>
                         <div><img src="{{ asset('storage/fruits-img/orange.png') }}" alt="orange"></div>
                     </div>
