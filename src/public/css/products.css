@@ -6,25 +6,29 @@
     font-style: italic;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 .header {
-    min-width: 1px;
-    max-width: 1512px;
     width: 100%;
-    min-height: 53px;
-    height: auto;
-    padding: 10px 20px 10px 20px;
+    max-width: 1512px;
+    height: 53px;
+    padding: 10px 20px;
     background: rgba(255, 255, 255, 1);
     border-bottom: 1px solid rgba(244, 244, 244, 1)
 }
 
 .header__inner {
-    margin: 0 auto;
-    padding: 20px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
     max-width: 1230px;
 }
 
 .header__logo {
-    width: 112px;
+    width: auto;
     height: 33px;
     font-family: jsMath-cmti10;
     font-size: 30px;
@@ -38,9 +42,10 @@
 
 .products__content{
     align-items: center;
-    margin: 0 auto;
     padding: 70px 20px;
     max-width: 1512px;
+    width: 100%;
+    height: auto;
     background: rgba(248, 248, 248, 1);
     border-bottom: 1px solid;
 }
@@ -48,19 +53,21 @@
 .products-form__heading{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     min-width: 1px;
     max-width: 1512px;
     min-height: 50px;
     height: auto;
-    padding: 0px 40px 0px 40px;
+    padding: 0px 40px;
     gap: 1167px;
+    margin-bottom: 20px;
 }
 
-.products-form__heading-text {
+.products-form__heading-text h2 {
     width: 128px;
     height: 48px;
     font-family: Hiragino Kaku Gothic Pro;
-    font-size: 20px;
+    font-size: 32px;
     font-weight: 600;
     line-height: 48px;
     text-align: left;
@@ -68,23 +75,31 @@
 }
 
 .form__button-add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 137px;
     height: 50px;
-    padding: 13px 20px 13px 20px;
+    padding: 13px 20px;
     gap: 10px;
     border-radius: 5px;
     background: rgba(255, 169, 41, 1);
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+    border: none;
 }
 
-.button-add{
-    width: 97px;
+.button-add {
+    width: auto;
     height: 24px;
     font-family: Hiragino Kaku Gothic Pro;
     font-size: 16px;
     font-weight: 600;
     line-height: 24px;
     color: rgba(75, 75, 75, 1);
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    white-space: nowrap;
 }
 
 .form {
@@ -128,7 +143,7 @@
     height: auto;
     padding: 14.5px 10px 14.5px 10px;
     gap: 10px;
-    border-radius: 25px 0px 0px 0px;
+    border-radius: 25px;
     border: 1px 0px 0px 0px;
     background: rgba(255, 255, 255, 1);
     border: 1px solid rgba(224, 223, 222, 1)
@@ -234,7 +249,7 @@
     gap: 20px;
 }
 
-.img__container--top {
+.img__container--top, .img__container--bottom {
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
@@ -244,16 +259,34 @@
     height: auto;
     gap: 20px;
     opacity: 0px;
-    margin-bottom: 20px;
+    margin: 0px 20px 20px 20px;
 }
 
-.img__container--bottom{
+.products__card {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    min-width: 1px;
-    max-width: 162px;
+    flex-direction: column;
+    min-width: 374px;
+    width: auto;
     min-height: 350px;
     height: auto;
-    gap: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px #0000001A;
+}
+
+.card__img {
+    min-width: 374px;
+    width: auto;
+    min-height: 281px;
+    height: auto;
+}
+
+.card__content {
+    display: flex;
+    justify-content: space-between;
+    min-width: 374px;
+    width: 100%;
+    min-height: 69px;
+    height: auto;
+    padding: 20px 0px 0px 0px;
+    background: #FFFFFF;
 }
