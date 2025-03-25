@@ -21,7 +21,9 @@
     </header>
 
     <main>
-        @yield('content')
+        <div class="register-form__content">
+            @yield('content')
+        </div>
     </main>
 </body>
 

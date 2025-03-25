@@ -1,3 +1,14 @@
+@font-face {
+    font-family: 'jsMath-cmti10';
+    src: url('/fonts/jsMath-3.6e/cmti10.woff2') format('woff2'),
+        url('/fonts/jsMath-3.6e/cmti10.woff') format('woff'),
+        url('/fonts/jsMath-3.6e/cmti10.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+
+
 .header {
     background: #fff;
 }
@@ -12,7 +23,16 @@
     padding: 10px;
     color: #F5C800;
     text-decoration: none;
-    font-weight: bold;
-    font-size: 24px;
-    font-family: italic;
+    font-weight: 500;
+    font-size: 30px;
+    font-family: 'jsMath-cmti10', serif;
+        font-style: italic;
+    text-align: left;
+}
+
+.register-form__content {
+    background: #f8f8f8;
+    margin: 0 auto;
+    padding: 30px 15px;
+    max-width: 1230px;
 }

@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/products', [ProductController::class, 'index']);   //商品一覧
+
+
+
+Route::get('/products/register', [ProductController::class, 'create']);   //商品登録画面

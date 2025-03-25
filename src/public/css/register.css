@@ -1,0 +1,122 @@
+.register-form__heading {
+    margin: 0 auto;
+    width: 70%;
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.form {
+    margin: 0 auto;
+    width: 70%;
+    text-align: left;
+}
+
+/* .form__group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+} */
+
+.form__group--title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.form__label--required {
+    margin-left: 5px;
+    padding: 5px;
+    background: #fd0707;
+    color: #FFFFFF;
+    font-size: 12px;
+}
+
+.form__group-content {
+    margin-top: 15px;
+}
+
+.form__input--text-img {
+    border: none;
+    width: 100%;
+    /* opacity: 0; */
+}
+
+.form__input--text-img {
+    display: none;
+}
+
+.custom-file-label {
+    display: inline-block;
+        padding: 5px 10px;
+        background-color: #E0DFDE;
+        border: 1px solid #4B4B4B;
+        border-radius: 3px;
+        font-size: 14px;
+        font-weight: 300;
+        cursor: pointer;
+        color: #333;
+        text-align: center;
+}
+
+.custom-file-label:hover {
+    background-color: #e2e2e2;
+}
+
+.custom-file-label:active {
+    background-color: #d1d1d1;
+}
+
+.form__label--select {
+    margin-left: 5px;
+    padding: 5px;
+    color: #fd0707;
+    font-size: 12px;
+}
+
+.form__error {
+    height: 20px;
+    color: #ff0000;
+    text-align: left;
+}
+
+.form__input--text input,
+.form__input--textarea textarea {
+    padding: 10px;
+    width: 600px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+
+    appearance: none;
+}
+
+.form__input--text input {
+    height: 40px;
+}
+
+.form__input--textarea textarea {
+    height: 180px;
+}
+
+.form__button {
+    margin-top: 30px;
+}
+
+.form__button-back {
+    padding: 10px;
+    width: 30%;
+    height: 50px;
+    border: none;
+    border-radius: 3px;
+    background: #E0DFDE;
+    cursor: pointer;
+}
+
+.form__button-submit {
+    padding: 10px;
+    width: 30%;
+    height: 50px;
+    border: none;
+    border-radius: 3px;
+    background: #F5C800;
+    cursor: pointer;
+}
