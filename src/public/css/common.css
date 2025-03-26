@@ -30,8 +30,12 @@
     text-align: left;
 }
 
-.register-form__content {
+main {
     background: #f8f8f8;
+    height: 100%;
+}
+
+.register-form__content {
     margin: 0 auto;
     padding: 30px 15px;
     max-width: 1230px;

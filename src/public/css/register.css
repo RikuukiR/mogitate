@@ -73,6 +73,38 @@
     font-size: 12px;
 }
 
+input[type="checkbox"] {
+    appearance: none;
+    /* デフォルトのチェックボックスを消す */
+    width: 18px;
+    height: 18px;
+    border: 2px solid #666;
+    border-radius: 50%;
+    /* 丸くする */
+    display: inline-flex;
+    /* 横長にならないように調整 */
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-right: 8px;
+    /* 文字との間隔 */
+}
+
+/* チェック時のスタイル */
+input[type="checkbox"]:checked {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+/* チェックマーク（中央の小さな丸） */
+input[type="checkbox"]:checked::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background: white;
+    border-radius: 50%;
+}
+
 .form__error {
     height: 20px;
     color: #ff0000;
@@ -82,8 +114,8 @@
 .form__input--text input,
 .form__input--textarea textarea {
     padding: 10px;
-    width: 600px;
-    border: 1px solid #ddd;
+    width: 80%;
+    border: 1px solid #E0DFDE;
     border-radius: 3px;
 
     appearance: none;
@@ -95,13 +127,20 @@
 
 .form__input--textarea textarea {
     height: 180px;
+    resize: vertical;
 }
 
 .form__button {
-    margin-top: 30px;
+    /* margin: 20px auto; */
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .form__button-back {
+    margin-right: 30px;
     padding: 10px;
     width: 30%;
     height: 50px;

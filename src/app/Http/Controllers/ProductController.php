@@ -2,7 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use App\Models\Product;
+use App\Http\Requests\ProductRequest;
 
 class ProductController extends Controller
 {
@@ -13,6 +14,15 @@ class ProductController extends Controller
 
     public function create()
     {
+        return view('register');
+    }
+
+    public function store(ProductRequest $request)
+    {
+
+        $content = $request->validated();
+        $content = $request->only(['name', 'price', 'season', 'description' ,'img']);
+        Product::create($content);
         return view('register');
     }
 }
