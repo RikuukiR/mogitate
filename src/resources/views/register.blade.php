@@ -10,6 +10,7 @@
     <h2>商品登録</h2>
 </div>
 <form class="form" action="/products" method="POST">
+    @csrf
     <div class="form__group">
         <div class="form__group-title">
             <span class="form__label--item">商品名</span>
@@ -49,8 +50,8 @@
         </div>
         <div class="form__group-content">
             <div class="form__input--text">
-                <label for="img" class="custom-file-label">ファイルを選択</label>
-                <input class="form__input--text-img" type="file" name="img" id="img" />
+                <button type="button" id="upload-btn" class="custom-upload-btn">ファイルを選択</button>
+                <input type="file" id="file-input" class="hidden-file-input">
             </div>
             <div class="form__error">
                 @error('img')
@@ -66,11 +67,11 @@
             <span class="form__label--select">複数選択可</span>
         </div>
         <div class="form__group-content">
-            <div class="form__input--text">
-                <label><input type="checkbox" name="season[]" value="spring"> 春</label>
-                <label><input type="checkbox" name="season[]" value="summer"> 夏</label>
-                <label><input type="checkbox" name="season[]" value="autumn"> 秋</label>
-                <label><input type="checkbox" name="season[]" value="winter"> 冬</label>
+            <div class="form__input--checkbox">
+                <input class="checkbox" type="checkbox" name="spring" value="spring">春
+                <input class="checkbox" type="checkbox" name="summer" value="summer">夏
+                <input class="checkbox" type="checkbox" name="fall" value="fall">秋
+                <input class="checkbox" type="checkbox" name="winter" value="winter">冬
             </div>
             <div class="form__error">
                 @error('season')
@@ -86,17 +87,17 @@
         </div>
         <div class="form__group-content">
             <div class="form__input--text">
-                <textarea name="content" cols="95" rows="10" id="" placeholder="商品の説明を入力" value="{{ old('description') }}"></textarea>
+                <textarea name="content" id="" placeholder="商品の説明を入力">{{ old('description') }}</textarea>
             </div>
             <div class="form__error">
-                @error('description')
+                @error('content')
                 {{ $message }}
                 @enderror
             </div>
         </div>
     </div>
     <div class="form__button">
-        <button class="form__button-back" type="submit">戻る</button>
+        <button class="form__button-back" type="button">戻る</button>
         <button class="form__button-submit" type="submit">登録</button>
     </div>
 </form>

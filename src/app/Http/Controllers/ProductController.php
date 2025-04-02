@@ -25,4 +25,9 @@ class ProductController extends Controller
         Product::create($content);
         return view('register');
     }
+
+    public function product()
+    {
+        return view('product');
+    }
 }
